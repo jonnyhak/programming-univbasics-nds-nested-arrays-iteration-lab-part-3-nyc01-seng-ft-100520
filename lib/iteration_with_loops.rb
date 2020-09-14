@@ -4,10 +4,11 @@ def join_nested_strings(src)
   
   
   flattened = src.flatten 
-  str = ""
+  strings = []
   
   flattened.each do |ele|
-    str += ele if ele.is_a? String 
+    strings.push(ele) if ele.is_a? String 
   end
   
+  strings.split()
 end
