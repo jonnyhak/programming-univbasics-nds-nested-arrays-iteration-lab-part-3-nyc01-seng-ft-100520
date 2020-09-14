@@ -7,7 +7,7 @@ def join_nested_strings(src)
   str = ""
   
   flattened.each do |ele|
-    str += ele + " " if ele.class == String 
+    str += (ele + " ") if ele.class == String 
   end
   
 end
