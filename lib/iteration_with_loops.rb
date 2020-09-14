@@ -10,5 +10,5 @@ def join_nested_strings(src)
     strings.push(ele) if ele.is_a? String 
   end
   
-  strings.join 
+  strings.join(" ") 
 end
