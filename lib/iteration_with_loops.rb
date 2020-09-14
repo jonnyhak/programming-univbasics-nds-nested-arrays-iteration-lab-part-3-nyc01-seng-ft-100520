@@ -3,4 +3,11 @@ def join_nested_strings(src)
   # Combine all Strings present in the AoA into a single value and return it
   
   
+  flattened = src.flatten 
+  str = ""
+  
+  flattened.each do |ele|
+    str += ele + " " if ele.class == String 
+  end
+  
 end
